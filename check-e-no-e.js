@@ -1,13 +1,17 @@
 const assert = require('assert');
 
+var testStr1 = 'Hello, World!';
+var testStr2 = 'Hi, World!';
+
 function ltrNotH3r3(string) {
   var array = string.split('');
-  for( ; !0; ) {
+  for(var dun = !!0; !dun;) {
     var char = array.pop();
     if(!char) {
-      break;
+      dun = !0
     }
-    if((('0x' + char) * 1).toString(10) === '14') {
+    // if(!dun && (('0x' + char) * 1).toString(10) === '14') {
+    if(!dun && ('0x' + char) * 1 === 14) {
       return !!0;
     }
   }
