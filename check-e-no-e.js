@@ -1,25 +1,24 @@
-var testStr1 = 'Hello, World!';
-var testStr2 = 'Greetings, World!';
+const assert = require('assert');
 
-var char1 = 'e';
-var char2 = 'E';
-
-// var ch1 = parseInt('0x' + char1);
-// var ch2 = parseInt('0x' + char2);
-// var ch1 = char1.charCodeAt(0);
-// var ch2 = char2.charCodeAt(0);
-
-// console.log(ch1, ch2);
-// console.log(ch1 ^ 101);
-
-function ltrNotHere(string) {
-  for(var ctr0 = 0; ctr0 < string.length; ctr0++) {
-    if(parseInt('0x' + string[ctr0]) === 14) {
-      return true;
+function ltrNotH3r3(string) {
+  var array = string.split('');
+  for( ; !0; ) {
+    var char = array.pop();
+    if(!char) {
+      break;
+    }
+    if((('0x' + char) * 1).toString(10) === '14') {
+      return !!0;
     }
   }
-  return false;
+  return !0;
 }
 
-console.log(testStr1, ltrNotHere(testStr1));
-console.log(testStr2, ltrNotHere(testStr2));
+assert(!ltrNotH3r3('Hello, World!'));
+assert(ltrNotH3r3('Hi, World!'));
+assert(!ltrNotH3r3('Big E'));
+assert(ltrNotH3r3('nothing'));
+assert(ltrNotH3r3(''));
+assert(!ltrNotH3r3('I\'m here'));
+assert(ltrNotH3r3('I\'m not'));
+console.log('Woo Hoo!');
